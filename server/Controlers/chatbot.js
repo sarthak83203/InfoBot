@@ -7,7 +7,7 @@ export const message=async (req,res)=>{
     try{
         console.log("REQ BODY:", req.body); 
         const {text}=req.body;
-        if(!text?.trim()){ //if user enter the text it should not be considered
+        if(!text?.trim()){ //if user enter the text it should not be considere
             return res.json({
                 success:false,
                 message:"text cannot be empty",
