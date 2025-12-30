@@ -14,7 +14,7 @@ export const message=async (req,res)=>{
             })
         }
 
-        //if agreee
+        //if agree
         const user=await User.create({
             sender:"user",
             text,
